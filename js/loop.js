@@ -7,7 +7,7 @@ const ball = lottie.loadAnimation({
     renderer: "svg",
     autoplay: false,
     loop: false,
-    path: "data/looptest-1.json" // async load
+    path: 'data/looptest-1.json' // async load
 });
 
 // Wait for animation to be ready (async load)
