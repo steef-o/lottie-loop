@@ -7,7 +7,7 @@ const sunCalcContainer = document.getElementById("sunCalc");
 
 const bgAnimation = lottie.loadAnimation({
     container: bgContainer,
-    renderer: "svg",
+    renderer: "html",
     autoplay: true,
     loop: true,
     path: 'data/00_Bakgrunn.json', // async load
@@ -18,7 +18,7 @@ const bgAnimation = lottie.loadAnimation({
 
 const fgAnimation = lottie.loadAnimation({
     container: fgContainer,
-    renderer: "svg",
+    renderer: "html",
     autoplay: true,
     loop: true,
     path: 'data/01_Forgrunn.json', // async load
@@ -29,7 +29,7 @@ const fgAnimation = lottie.loadAnimation({
 
 const sunAnimation = lottie.loadAnimation({
     container: sunContainer,
-    renderer: "svg",
+    renderer: "html",
     autoplay: true,
     loop: true,
     path: 'data/02_Sol.json', // async load
@@ -40,7 +40,7 @@ const sunAnimation = lottie.loadAnimation({
 
 const sunCalcAnimation = lottie.loadAnimation({
     container: sunCalcContainer,
-    renderer: "svg",
+    renderer: "html",
     autoplay: true,
     loop: true,
     path: 'data/03_Solkonto.json', // async load
@@ -49,6 +49,6 @@ const sunCalcAnimation = lottie.loadAnimation({
     }
 });
 
-bgAnimation.addEventListener('data_ready', function () {
-    console.log("animation ready");
+sunCalcAnimation.addEventListener('data_ready', function () {
+    lottie.setQuality("low");
 });
