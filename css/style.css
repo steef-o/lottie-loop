@@ -1,6 +1,6 @@
 body {
-    background-color: coral;
-}
+     background-color: #ff5500;
+ }
 .navigation {
     display: flex;
     justify-content: center;
@@ -60,8 +60,43 @@ body {
     }
 }
 
-#ball {
-    width: 50%;
+#ball, #sol, #sol2, #sol3 {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+#sol2{
+     top: 200px;
+ }
+
+#sol3{
+    top: 400px;
+}
+#ball{
+    z-index: 1;
 }
 
+
+#bg, #fg, #sun, #sunCalc{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 1000px;
+}
+
+#fg {
+    z-index: 1;
+}
+
+#sun {
+    z-index: 2;
+    height: 400px;
+}
+
+#sunCalc {
+    z-index: 3;
+    top: 30%;
+    width: 50%;
+    left: 25%;
+}
 
